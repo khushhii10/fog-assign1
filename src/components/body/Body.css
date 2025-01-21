@@ -1,0 +1,78 @@
+/* body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #EEE;
+  }
+  .card1{
+    height: 350px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    border-radius: 10px;
+    padding: 13px;
+  }
+  .card1 .inner-card{
+    height: 220px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+  }
+   */
+   /* General Styling */
+.container .row {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of items on smaller screens */
+    justify-content: space-between;
+    gap: 10px; /* Adds space between the items */
+}
+
+.container .row .col-lg-3,
+.container .row .col-md-6,
+.container .row .col-sm-12 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Adds some space below each item */
+}
+
+.card1 {
+    text-align: center;
+}
+
+.inner-card img {
+    width: 100%; /* Ensure image takes the full width of its container */
+    max-width: 100%; /* Prevent images from overflowing */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Media Queries */
+
+/* Large screens (Desktops and laptops) */
+@media (min-width: 992px) {
+    .container .row .col-lg-3 {
+        flex: 0 0 25%; /* Four items per row */
+        max-width: 25%;
+    }
+}
+
+/* Medium screens (Tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container .row .col-md-6 {
+        flex: 0 0 50%; /* Two items per row */
+        max-width: 50%;
+    }
+}
+
+/* Small screens (Mobile devices) */
+@media (max-width: 767px) {
+    .container .row .col-sm-12 {
+        flex: 0 0 100%; /* One item per row */
+        max-width: 100%;
+    }
+
+    .card1 {
+        text-align: left; /* Adjust text alignment for smaller screens */
+        padding: 10px; /* Add some padding for better spacing */
+    }
+
+    .inner-card img {
+        margin: 0 auto; /* Center images if required */
+    }
+}
