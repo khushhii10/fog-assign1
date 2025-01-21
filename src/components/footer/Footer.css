@@ -1,0 +1,56 @@
+.footer {
+    display: flex;
+    justify-content: space-between; /* Spread items evenly across the width */
+    align-items: center; /* Align items vertically in the center */
+    padding: 20px;
+    background-color: #f8f9fa; /* Optional background color */
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for styling */
+}
+
+.footer-item {
+    display: flex;
+    align-items: center; /* Vertically align image and label */
+    text-align: left; /* Align the text to the left */
+    width: 20%; /* Ensure equal space for each item */
+}
+
+.footer-item img {
+    max-width: 50px; /* Adjust the size of the images */
+    margin-right: 10px; /* Space between the image and the label */
+}
+
+.footer-item label {
+    font-size: 14px; /* Adjust font size for labels */
+    color: #333; /* Optional text color */
+    line-height: 1.4; /* Better spacing between lines of text */
+}
+
+/* Responsive Design */
+
+/* For tablets (max-width: 991px) */
+@media (max-width: 991px) {
+    .footer {
+        flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    }
+
+    .footer-item {
+        width: 45%; /* Adjust width to fit two items per row */
+        margin-bottom: 20px; /* Add spacing between rows */
+    }
+}
+
+/* For mobile devices (max-width: 767px) */
+@media (max-width: 767px) {
+    .footer-item {
+        width: 100%; /* Full width for each item */
+    }
+
+    .footer-item img {
+        max-width: 40px; /* Smaller images for mobile */
+    }
+
+    .footer-item label {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}
