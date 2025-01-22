@@ -1,40 +1,29 @@
-/* body{
+body{
+    padding:0px;
     margin: 0px;
-    padding: 0px;
-    background-color: #EEE;
-  }
-  .card1{
-    height: 350px;
-    background-color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-    border-radius: 10px;
-    padding: 13px;
-  }
-  .card1 .inner-card{
-    height: 220px;
-    background-color: #f1f1f1;
-    border-radius: 10px;
-  }
-   */
-   /* General Styling */
-   .container {
+}
+
+.container {
     display: flex;
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
     justify-content: space-between; /* Add space between rows and items */
-    gap: 10px; /* Optional: Adds spacing between images */
+    gap: 20px; /* Optional: Adds spacing between images */
+    padding:50px;
 }
 
 .container img {
-    width: calc(25% - 10px); /* Each image takes 25% of the row, accounting for the gap */
+    width:285px;
+    height:446px;
     max-width: 100%; /* Prevent images from overflowing */
-    height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Ensure images fit well within their containers */
-    border-radius: 5px; /* Optional: Rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+   
 }
 
 .card1 {
     text-align: center;
+    background-color: #F4F5F7;
+    height:410px;
 }
 
 .inner-card img {
@@ -45,24 +34,23 @@
 
 .footer1 {
     padding: 20px;
-    background-color: #f8f9fa;
     text-align: center;
-    border-top: 1px solid #e0e0e0;
-    bottom: 0;
     width: 100%;
+  
 }
 
 .pagination {
     display: flex;
     justify-content: center;
     gap: 10px;
+    border-bottom: 80px;
 }
 
 .page-button {
     padding: 10px 15px;
-    border: 1px solid #007bff;
-    background-color: #ffffff;
-    color: #007bff;
+    border: 1px solid #FAF3EA;
+    background-color: #FAF3EA;
+    color: black;
     border-radius: 5px;
     font-size: 14px;
     cursor: pointer;
@@ -70,12 +58,12 @@
 }
 
 .page-button:hover:not(.disabled) {
-    background-color: #007bff;
+    background-color: #B88E2F;
     color: #ffffff;
 }
 
 .page-button.active {
-    background-color: #007bff;
+    background-color: #B88E2F;
     color: #ffffff;
     font-weight: bold;
 }

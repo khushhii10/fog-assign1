@@ -10,19 +10,19 @@ const Footer = () => {
         <div className="footer">
             <div className="footer-item">
                 <img src={f1} alt="trophy" />
-                <label>High Quality <br /> crafted from top materials</label>
+                <label style={{fontWeight:'bold'}}>High Quality <br/>crafted from top materials</label>
             </div>
             <div className="footer-item">
                 <img src={f2} alt="warranty" />
-                <label>Warranty Protection <br /> Over 2 years</label>
+                <label style={{fontWeight:"bold"}}>Warranty Protection <br /> Over 2 years</label>
             </div>
             <div className="footer-item">
                 <img src={f3} alt="shipping" />
-                <label>Free Shipping <br /> Order over 150 $</label>
+                <label style={{fontWeight:"bold"}}>Free Shipping <br /> Order over 150 $</label>
             </div>
             <div className="footer-item">
                 <img src={f4} alt="support" />
-                <label>24/7 Support <br /> Dedicated support</label>
+                <label style={{fontWeight:"bold"}}>24/7 Support <br /> Dedicated support</label>
             </div>
         </div>
     );
