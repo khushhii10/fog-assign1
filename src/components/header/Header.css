@@ -1,3 +1,6 @@
+body{
+  font-family: Poopins;
+}
 .first {
     display: flex;
     align-items: center;
@@ -10,8 +13,9 @@
   }
   
   .first img {
-    height: 40px;
+    height: 60px;
     cursor: pointer;
+    width:60px;
   }
   
   .first label {
@@ -26,16 +30,18 @@
     display: flex;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    float: center;
   }
   
   .first ul li {
     margin: 0 15px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bold;
     cursor: pointer;
     color: #333;
     transition: color 0.3s ease;
+    padding: 20px;
+  
   }
   
   .first ul li:hover {
@@ -43,15 +49,21 @@
   }
   
   .first div:last-child img {
-    margin-left: 20px;
-    height: 25px;
+    margin-left:50px;
+    margin-right:20px;
+    width:23.33px;
+    height: 18.67px;
     cursor: pointer;
     transition: transform 0.3s ease;
+    padding:1px;
   }
   
   .first div:last-child img:hover {
     transform: scale(1.1);
   }
+  
+  
+
   
   /* Responsive Design */
   @media (max-width: 768px) {
@@ -128,9 +140,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: #f9f5f1;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+    background-color: #FAF3EA;
     font-family: Arial, sans-serif;
   }
   
@@ -139,6 +149,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-left:60px;
   }
   
   .filter-icon,
@@ -156,8 +167,10 @@
   
   /* Results Section */
   .results-section {
-    color: #555;
+   float:left;
+    color: rgba(0, 0, 0, 0.751);
     font-size: 14px;
+    font-weight: bold;
   }
   
   /* Sort Section */
@@ -165,12 +178,12 @@
     display: flex; /* Ensure all elements are in a single row */
     align-items: center; /* Vertically center align items */
     gap: 15px; /* Add space between elements */
+    
   }
   
   .sort-section label {
     font-size: 14px;
-    color: #555;
-    margin-right: 5px; /* Space between label and box */
+    color: rgba(0, 0, 0, 0.751);
   }
   
   .show-box,

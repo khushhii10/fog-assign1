@@ -16,7 +16,7 @@ const Header = () => {
             <div className="first">
                 <div style={{ display: "flex", alignItems: "center" }}>
                     <img src={logo} alt="logo" />
-                    <label>FURINO</label>
+                    <label style={{fontFamily:'Montserrat', fontWeight:2000}}>FURINO</label>
                 </div>
                 <ul>
                     <li>Home</li>
@@ -24,7 +24,7 @@ const Header = () => {
                     <li>About</li>
                     <li>Contact</li>
                 </ul>
-                <div>
+                <div classname="header-image">
                     <img src={alert} alt="alert" />
                     <img src={search} alt="search" />
                     <img src={heart} alt="heart" />

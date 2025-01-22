@@ -6,6 +6,9 @@ import m4 from "../../assets/m4.png";
 import discount1 from "../../assets/discount1.png";
 import discount2 from "../../assets/discount2.png";
 import new1 from "../../assets/new.png";
+import share from "../../assets/gridicons.png";
+import heart from "../../assets/heart.png";
+import compare from "../../assets/compare.png";
 import "./Body.css";
 
 const Body = () => {
@@ -37,6 +40,16 @@ const Body = () => {
                             height: "50px",
                         }}></img>
                     </div>
+                    <div className="overlay">
+                        <div className="buttons">
+                            <button>Add to Cart</button>
+                        </div>
+                        <div className="actions">
+                            <span> <img src={share} alt="share" /> Share</span>
+                            <span><img src={compare} alt="share" /> Compare</span>
+                            <span><img src={heart} alt="share" /> Like</span>
+                        </div>
+                    </div>
                     <span style={{ display: 'block', marginTop: '5px', fontWeight: 'bold' }}>Slytherine</span>
                     <p style={{ fontSize: '14px', opacity: 0.6 }}>Stylish cafe chair</p>
                     <span style={{ fontSize: '14px', fontWeight: 'bold' }}>Rp 2.500.000</span>
@@ -46,6 +59,16 @@ const Body = () => {
                 <div className="card1">
                     <div className="inner-card">
                         <img src={m2} alt="img" className="img-fluid"></img>
+                    </div>
+                    <div className="overlay">
+                        <div className="buttons">
+                            <button>Add to Cart</button>
+                        </div>
+                        <div className="actions">
+                            <span> <img src={share} alt="share" /> Share</span>
+                            <span><img src={compare} alt="share" /> Compare</span>
+                            <span><img src={heart} alt="share" /> Like</span>
+                        </div>
                     </div>
                     <span style={{ display: 'block', marginTop: '5px', fontWeight: 'bold' }}>Leviosa</span>
                     <p style={{ fontSize: '14px', opacity: 0.6 }}>Stylish cafe chair</p>
@@ -62,6 +85,16 @@ const Body = () => {
                             width: "50px",
                             height: "50px",
                         }}></img>
+                    </div>
+                    <div className="overlay">
+                        <div className="buttons">
+                            <button>Add to Cart</button>
+                        </div>
+                        <div className="actions">
+                            <span> <img src={share} alt="share" /> Share</span>
+                            <span><img src={compare} alt="share" /> Compare</span>
+                            <span><img src={heart} alt="share" /> Like</span>
+                        </div>
                     </div>
                     <span style={{ display: 'block', marginTop: '5px', fontWeight: 'bold' }}>Lolito</span>
                     <p style={{ fontSize: '14px,opacity: 0.6' }}>Luxury big sofa</p>
@@ -81,6 +114,16 @@ const Body = () => {
                             height: "50px",
                         }}></img>
                     </div>
+                    <div className="overlay">
+                        <div className="buttons">
+                            <button>Add to Cart</button>
+                        </div>
+                        <div className="actions">
+                            <span> <img src={share} alt="share" /> Share</span>
+                            <span><img src={compare} alt="share" /> Compare</span>
+                            <span><img src={heart} alt="share" /> Like</span>
+                        </div>
+                    </div>
                     <span style={{ display: 'block', marginTop: '5px', fontWeight: 'bold' }}>Respira</span>
                     <p style={{ fontSize: '14px', opacity: 0.6 }}>Outdoor bar table and stool</p>
                     <span style={{ fontSize: '14px', fontWeight: 'bold' }}>Rp 500.000</span>
@@ -97,6 +140,16 @@ const Body = () => {
                             height: "50px",
                         }}></img>
                     </div>
+                    <div className="overlay">
+                        <div className="buttons">
+                            <button>Add to Cart</button>
+                        </div>
+                        <div className="actions">
+                            <span> <img src={share} alt="share" /> Share</span>
+                            <span><img src={compare} alt="share" /> Compare</span>
+                            <span><img src={heart} alt="share" /> Like</span>
+                        </div>
+                    </div>
                     <span style={{ display: 'block', marginTop: '5px', fontWeight: 'bold' }}>Slytherine</span>
                     <p style={{ fontSize: '14px', opacity: 0.6 }}>Stylish cafe chair</p>
                     <span style={{ fontSize: '14px', fontWeight: 'bold' }}>Rp 2.500.000</span>
@@ -106,6 +159,16 @@ const Body = () => {
                 <div className="card1">
                     <div className="inner-card">
                         <img src={m2} alt="img" className="img-fluid"></img>
+                    </div>
+                    <div className="overlay">
+                        <div className="buttons">
+                            <button>Add to Cart</button>
+                        </div>
+                        <div className="actions">
+                            <span> <img src={share} alt="share" /> Share</span>
+                            <span><img src={compare} alt="share" /> Compare</span>
+                            <span><img src={heart} alt="share" /> Like</span>
+                        </div>
                     </div>
                     <span style={{ display: 'block', marginTop: '5px', fontWeight: 'bold' }}>Leviosa</span>
                     <p style={{ fontSize: '14px', opacity: 0.6 }}>Stylish cafe chair</p>
@@ -123,6 +186,16 @@ const Body = () => {
                             width: "50px",
                             height: "50px",
                         }}></img>
+                    </div>
+                    <div className="overlay">
+                        <div className="buttons">
+                            <button>Add to Cart</button>
+                        </div>
+                        <div className="actions">
+                            <span> <img src={share} alt="share" /> Share</span>
+                            <span><img src={compare} alt="share" /> Compare</span>
+                            <span><img src={heart} alt="share" /> Like</span>
+                        </div>
                     </div>
                     <span style={{ display: 'block', marginTop: '5px', fontWeight: 'bold' }}>Lolito</span>
                     <p style={{ fontSize: '14px', opacity: 0.6 }}>Luxury big sofa</p>
@@ -142,6 +215,16 @@ const Body = () => {
                             height: "50px",
                         }}></img>
                     </div>
+                    <div className="overlay">
+                        <div className="buttons">
+                            <button>Add to Cart</button>
+                        </div>
+                        <div className="actions">
+                            <span> <img src={share} alt="share" /> Share</span>
+                            <span><img src={compare} alt="share" /> Compare</span>
+                            <span><img src={heart} alt="share" /> Like</span>
+                        </div>
+                    </div>
                     <span style={{ display: 'block', marginTop: '5px', fontWeight: 'bold' }}>Respira</span>
                     <p style={{ fontSize: '14px', opacity: 0.6 }}>Outdoor bar table and stool</p>
                     <span style={{ fontSize: '14px', fontWeight: 'bold' }}>Rp 500.000</span>
@@ -157,6 +240,16 @@ const Body = () => {
                             height: "50px",
                         }}></img>
                     </div>
+                    <div className="overlay">
+                        <div className="buttons">
+                            <button>Add to Cart</button>
+                        </div>
+                        <div className="actions">
+                            <span> <img src={share} alt="share" /> Share</span>
+                            <span><img src={compare} alt="share" /> Compare</span>
+                            <span><img src={heart} alt="share" /> Like</span>
+                        </div>
+                    </div>
                     <span style={{ display: 'block', marginTop: '5px', fontWeight: 'bold' }}>Slytherine</span>
                     <p style={{ fontSize: '14px', opacity: 0.6 }}>Stylish cafe chair</p>
                     <span style={{ fontSize: '14px', fontWeight: 'bold' }}>Rp 2.500.000</span>
@@ -166,6 +259,16 @@ const Body = () => {
                 <div className="card1">
                     <div className="inner-card">
                         <img src={m2} alt="img" className="img-fluid"></img>
+                    </div>
+                    <div className="overlay">
+                        <div className="buttons">
+                            <button>Add to Cart</button>
+                        </div>
+                        <div className="actions">
+                            <span> <img src={share} alt="share" /> Share</span>
+                            <span><img src={compare} alt="share" /> Compare</span>
+                            <span><img src={heart} alt="share" /> Like</span>
+                        </div>
                     </div>
                     <span style={{ display: 'block', marginTop: '5px', fontWeight: 'bold' }}>Leviosa</span>
                     <p style={{ fontSize: '14px', opacity: 0.6 }}>Stylish cafe chair</p>
@@ -183,6 +286,16 @@ const Body = () => {
                             width: "50px",
                             height: "50px",
                         }}></img>
+                    </div>
+                    <div className="overlay">
+                        <div className="buttons">
+                            <button>Add to Cart</button>
+                        </div>
+                        <div className="actions">
+                            <span> <img src={share} alt="share" /> Share</span>
+                            <span><img src={compare} alt="share" /> Compare</span>
+                            <span><img src={heart} alt="share" /> Like</span>
+                        </div>
                     </div>
                     <span style={{ display: 'block', marginTop: '5px', fontWeight: 'bold' }}>Lolito</span>
                     <p style={{ fontSize: '14px', opacity: 0.6 }}>Luxury big sofa</p>
@@ -202,6 +315,16 @@ const Body = () => {
                             height: "50px",
                         }}></img>
                     </div>
+                    <div className="overlay">
+                        <div className="buttons">
+                            <button>Add to Cart</button>
+                        </div>
+                        <div className="actions">
+                            <span> <img src={share} alt="share" /> Share</span>
+                            <span><img src={compare} alt="share" /> Compare</span>
+                            <span><img src={heart} alt="share" /> Like</span>
+                        </div>
+                    </div>
                     <span style={{ display: 'block', marginTop: '5px', fontWeight: 'bold' }}>Respira</span>
                     <p style={{ fontSize: '14px', opacity: 0.6 }}>Outdoor bar table and stool</p>
                     <span style={{ fontSize: '14px', fontWeight: 'bold' }}>Rp 500.000</span>
@@ -217,6 +340,16 @@ const Body = () => {
                             height: "50px",
                         }}></img>
                     </div>
+                    <div className="overlay">
+                        <div className="buttons">
+                            <button>Add to Cart</button>
+                        </div>
+                        <div className="actions">
+                            <span> <img src={share} alt="share" /> Share</span>
+                            <span><img src={compare} alt="share" /> Compare</span>
+                            <span><img src={heart} alt="share" /> Like</span>
+                        </div>
+                    </div>
                     <span style={{ display: 'block', marginTop: '5px', fontWeight: 'bold' }}>Slytherine</span>
                     <p style={{ fontSize: '14px', opacity: 0.6 }}>Stylish cafe chair</p>
                     <span style={{ fontSize: '14px', fontWeight: 'bold' }}>Rp 2.500.000</span>
@@ -226,6 +359,16 @@ const Body = () => {
                 <div className="card1">
                     <div className="inner-card">
                         <img src={m2} alt="img" className="img-fluid"></img>
+                    </div>
+                    <div className="overlay">
+                        <div className="buttons">
+                            <button>Add to Cart</button>
+                        </div>
+                        <div className="actions">
+                            <span> <img src={share} alt="share" /> Share</span>
+                            <span><img src={compare} alt="share" /> Compare</span>
+                            <span><img src={heart} alt="share" /> Like</span>
+                        </div>
                     </div>
                     <span style={{ display: 'block', marginTop: '5px', fontWeight: 'bold' }}>Leviosa</span>
                     <p style={{ fontSize: '14px', opacity: 0.6 }}>Stylish cafe chair</p>
@@ -244,6 +387,16 @@ const Body = () => {
                             height: "50px",
                         }}></img>
                     </div>
+                    <div className="overlay">
+                        <div className="buttons">
+                            <button>Add to Cart</button>
+                        </div>
+                        <div className="actions">
+                            <span> <img src={share} alt="share" /> Share</span>
+                            <span><img src={compare} alt="share" /> Compare</span>
+                            <span><img src={heart} alt="share" /> Like</span>
+                        </div>
+                    </div>
                     <span style={{ display: 'block', marginTop: '5px', fontWeight: 'bold' }}>Lolito</span>
                     <p style={{ fontSize: '14px', opacity: 0.6 }}>Luxury big sofa</p>
                     <span style={{ fontSize: '14px', fontWeight: 'bold' }}>Rp 7.000.000</span>
@@ -261,6 +414,16 @@ const Body = () => {
                             width: "50px",
                             height: "50px",
                         }}></img>
+                    </div>
+                    <div className="overlay">
+                        <div className="buttons">
+                            <button>Add to Cart</button>
+                        </div>
+                        <div className="actions">
+                            <span> <img src={share} alt="share" /> Share</span>
+                            <span><img src={compare} alt="share" /> Compare</span>
+                            <span><img src={heart} alt="share" /> Like</span>
+                        </div>
                     </div>
                     <span style={{ display: 'block', marginTop: '5px', fontWeight: 'bold' }}>Respira</span>
                     <p style={{ fontSize: '14px', opacity: 0.6 }}>Outdoor bar table and stool</p>

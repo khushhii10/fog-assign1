@@ -1,42 +1,125 @@
-body{
-    padding:0px;
+body {
+    padding: 0px;
     margin: 0px;
 }
 
 .container {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    justify-content: space-between; /* Add space between rows and items */
-    gap: 20px; /* Optional: Adds spacing between images */
-    padding:50px;
+    flex-wrap: wrap;
+    /* Allow wrapping on smaller screens */
+    justify-content: space-between;
+    /* Add space between rows and items */
+    gap: 20px;
+    /* Optional: Adds spacing between images */
+    padding: 50px;
 }
 
 .container img {
-    width:285px;
-    height:446px;
-    max-width: 100%; /* Prevent images from overflowing */
-    object-fit: cover; /* Ensure images fit well within their containers */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
-   
+    width: 285px;
+    height: 446px;
+    max-width: 100%;
+    /* Prevent images from overflowing */
+    object-fit: cover;
+    /* Ensure images fit well within their containers */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Optional: Add a shadow */
+
 }
 
 .card1 {
     text-align: center;
     background-color: #F4F5F7;
-    height:410px;
+    height: 410px;
+    position: relative;
+    /* Required for positioning the overlay */
+    overflow: hidden;
+}
+
+.card1:hover .inner-card img {
+    opacity: 0.5;
+    /* Reduce opacity on hover */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card1 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Semi-transparent background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card1:hover .overlay {
+    opacity: 1;
+    /* Make the overlay visible on hover */
+}
+
+.overlay .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.overlay .buttons button {
+    background-color: white;
+    color: #B88E2F;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 14px;
+}
+
+.overlay .actions {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin-top: 10px;
+    align-items: center; 
+}
+
+.overlay .actions span {
+    display: flex;
+    align-items: center; /* Align icon and text in a row */
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    gap: 8px; /* Add spacing between icon and text */
+}
+.overlay .actions span img {
+    width: 20px; /* Set the size of the icons */
+    height: 20px;
+    object-fit: contain; /* Ensure icons keep their aspect ratio */
+    filter: brightness(0) invert(1); /* Optional: Make icons white for better contrast on dark background */
+}
+.overlay .actions span i {
+    margin-right: 5px;
+    /* Add spacing between icon and text */
 }
 
 .inner-card img {
-    width: 100%; /* Ensure image takes the full width of its container */
-    max-width: 100%; /* Prevent images from overflowing */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    /* Ensure image takes the full width of its container */
+    max-width: 100%;
+    /* Prevent images from overflowing */
+    height: auto;
+    /* Maintain aspect ratio */
 }
 
 .footer1 {
     padding: 20px;
     text-align: center;
     width: 100%;
-  
+
 }
 
 .pagination {
@@ -73,26 +156,31 @@ body{
     color: #a0a0a0;
     cursor: not-allowed;
 }
+
 /* Medium screens (Tablets) */
 @media (max-width: 991px) {
     .container img {
-        width: calc(50% - 10px); /* Two images per row */
+        width: calc(50% - 10px);
+        /* Two images per row */
     }
 }
 
 /* Small screens (Mobile) */
 @media (max-width: 767px) {
     .container img {
-        width: 100%; /* One image per row */
+        width: 100%;
+        /* One image per row */
     }
 }
 
-    .card1 {
-        text-align: left; /* Adjust text alignment for smaller screens */
-        padding: 10px; /* Add some padding for better spacing */
-    }
+.card1 {
+    text-align: left;
+    /* Adjust text alignment for smaller screens */
+    padding: 10px;
+    /* Add some padding for better spacing */
+}
 
-    .inner-card img {
-        margin: 0 auto; /* Center images if required */
-    }
-
+.inner-card img {
+    margin: 0 auto;
+    /* Center images if required */
+}
