@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import m1 from "../../assets/m1.png";
 import m2 from "../../assets/m2.png";
 import m3 from "../../assets/m3.png";
@@ -12,20 +12,6 @@ import compare from "../../assets/compare.png";
 import "./Body.css";
 
 const Body = () => {
-    const [currentPage, setCurrentPage] = useState(1);
-    const totalPages = 3; // Example total pages
-
-    const handlePageClick = (page) => {
-        setCurrentPage(page);
-        console.log(`Page ${page} clicked`);
-    };
-
-    const handleNextClick = () => {
-        if (currentPage < totalPages) {
-            setCurrentPage(currentPage + 1);
-            console.log(`Page ${currentPage + 1} clicked`);
-        }
-    };
     return (
         <div>
             <div className="container">
@@ -432,19 +418,18 @@ const Body = () => {
             </div>
             <footer className="footer1">
                 <div className="pagination">
-                    {[1, 2, 3].map((page) => (
-                        <button
-                            key={page}
-                            className={`page-button ${currentPage === page ? "active" : ""}`}
-                            onClick={() => handlePageClick(page)}
-                        >
-                            {page}
-                        </button>
-                    ))}
+                <button className="page-button next-button">
+                    1
+                    </button>
+                    <button className="page-button next-button">
+                    2
+                    </button>
+                    <button className="page-button next-button">
+                    3
+                    </button>
                     <button
                         className="page-button next-button"
-                        onClick={handleNextClick}
-                        disabled={currentPage === totalPages}
+                        
                     >
                         Next
                     </button>
